@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  border-bottom:1px solid black;
+}
+
+.navbar li {
+  padding: 10px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  padding: 5px;
+  color:black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-group label{
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  width:60vw;
+}
+.form-group input{
+  margin-bottom: 10px;
+  border: none;
+  width:60vw;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center
+}
+
+.form-container .form-group button{
+  background: none;
+  font-size: 20px;
+  font-weight: bold;
+  border:none;
+}
+
+.search-input{
+  font-size: 20px;
+}
+
+.results-container {
+  display: grid;
+  grid-template-columns: 1fr ;
+}
+
+
+
+.saved-books{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.save-button{
+  background: greenyellow;
+  font-size: 18px;
+}
+
+.result-save a {
+  color:grey;
+  font-size: 12px;
+}
+.result h1{
+  font-size:15px;
+}
+
+.result{
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.result-top{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.result-save{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.result-header{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.saved-top{
+  display: flex;
+  justify-content: space-around;
+}
+.saved-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.saved-buttons button{
+  background: red;
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.saved-container h1{
+  text-align: center;
+  font-size: 20px;
+  padding: 30px
+}
+
+.saved-description{
+  padding: 10px;
+  line-height: 1.5rem;
+}
+
+.saved-title{
+  font-weight: bold;
+  text-align: center;
+}
+
+.saved-author{
+  font-style: italic;
+  color:grey;
+  text-align: center;
+}
+
+.home-container{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .results-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+.saved-books{
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+@media only screen and (min-width: 1000px) {
+  .results-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+.saved-books{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+}
